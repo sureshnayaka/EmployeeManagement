@@ -1,0 +1,18 @@
+.icon {
+    font-size: 8rem;
+    width: 8rem;
+    height: 8rem;
+
+    &--love {}
+}
+
+footer {
+    text-align: center;
+    padding-top: .75rem;
+    background-color: var(--button-brand-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+    color: #fefefe;
+}

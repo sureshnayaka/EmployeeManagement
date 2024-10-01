@@ -1,0 +1,71 @@
+.example-spacer {
+	flex: 1 1 auto;
+}
+
+.tool-bar {
+	background-color: var(--button-brand-color);
+	color: var(--notification-text-color);
+	position: fixed;
+	z-index: 99999;
+}
+
+.search {
+	#input-search {
+		border-radius: 10px;
+		border: solid 1px gray;
+		font-size: 0.75em;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		align-content: center;
+		width: 35rem;
+		/* Default width */
+		max-width: 35rem;
+		/* Maximum width */
+		min-width: 10rem;
+		/* Minimum width */
+		margin: 0 auto;
+		/* Center the element */
+		padding: 1rem;
+		/* Add some padding for aesthetics */
+		box-sizing: border-box;
+		height: 3rem;
+	}
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	#input-search {
+		width: 90% !important;
+		/* Take up 90% of the container width on small screens */
+		min-width: 10rem;
+		/* Maintain minimum width */
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+	#input-search {
+		width: 70% !important;
+		/* Take up 70% of the container width on medium screens */
+		max-width: 35rem;
+		/* Ensure max width remains 35rem */
+	}
+}
+
+
+.example-container {
+	width: 100%;
+	height: calc(100vh - 45px);
+}
+
+.example-sidenav-content {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.example-sidenav {
+	padding-top: 5rem;
+	width: 15rem;
+}

@@ -1,0 +1,38 @@
+:root {
+    --bs-body-font-family: 'Roboto', sans-serif;
+    --notification-bg-color: #424242;
+    --notification-info-color: #cec64d;
+    --notification-success-color: #008000;
+    --notification-warn-color: #ffa500;
+    --notification-error-color: #f44336;
+    --notification-text-color: #ffffff;
+    --template-card-bg-color: #f7f7f7;
+    --button-brand-color: #cac32f;
+    --button-hover-color: #cac32f
+}
+
+* {
+
+    &:active,
+    :focus {
+        outline: none !important; // 1
+    }
+}
+
+label {
+    margin-bottom: 0; // 2
+}
+
+
+a:not(.mat-button):not(.mat-raised-button):not(.mat-fab):not(.mat-mini-fab):not([mat-list-item]) {
+    color: #3f51b5; // 3
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    /* Changes the cursor to a pointer */
+}
+
+.width-10 {
+    width: 10rem;
+}

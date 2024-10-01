@@ -1,0 +1,36 @@
+<mat-toolbar class="tool-bar">
+    <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Home</span>
+    <span class="example-spacer"></span>
+
+    <div class="d-flex gap-1 search p-2 col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+        <input id="input-search" type="search" placeholder="Search" aria-label="Search">
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+            <div class="d-flex flex-row justify-content-start align-items-center width-10 cursor-pointer">
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>assignment</mat-icon>
+                </button>
+                <span>Assignment</span>
+            </div>
+            <div class="d-flex flex-row justify-content-start align-items-center width-10 cursor-pointer">
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>work</mat-icon>
+                </button>
+                <span>Task</span>
+            </div>
+
+        </div>
+    </mat-drawer>
+</mat-drawer-container>

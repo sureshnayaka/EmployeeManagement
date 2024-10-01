@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+// Imports functions, variables, and mixins that are needed by other Bootstrap files
+@import "variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities/api";
+@import "bootstrap/scss/type";
+
+@import "resets";
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+}
