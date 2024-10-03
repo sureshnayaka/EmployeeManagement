@@ -38,6 +38,7 @@ export class HomeViewDetialsComponent implements OnInit {
     };
   }
 
+
   getEmployees(): Employee[] {
     return [
       { position: 1, department: 'Development', employeeType: 'Fulltime', name: 'Surya', age: 28, currentProject: 'ElefantPrint', projectsWorked: 6, comments: 'N/A', status: 'Active', action: 'N/A' },

@@ -8,15 +8,15 @@
 		<div class="home-container bg-danger">
 			<div class="employee-summary">
 				<div class="employee-details gap-3 justify-content-center p-2">
-					<h2 class="employee-name">Surya nayak</h2>
+					<h2 class="employee-name">{{this.dataSource.data[0].name}}</h2>
 					<p class="employee-designation">Sr.Software Engineer</p>
 					<div class="employee-info">
 						<p><strong>Email:</strong> suresh.nayak&#64;acheron-tech.com</p>
-						<p><strong>Employee number:</strong> 116</p>
-						<p><strong>Department:</strong> Development</p>
-						<p><strong>Age:</strong> 28</p>
-						<p><strong>Projects:</strong> ElefantPrint</p>
-						<p><strong>Status:</strong> Active</p>
+						<p><strong>Employee number:</strong>{{this.dataSource.data[0].position}}</p>
+						<p><strong>Department:</strong> {{this.dataSource.data[0].department}}</p>
+						<p><strong>Age:</strong> {{this.dataSource.data[0].age}}</p>
+						<p><strong>Projects:</strong> {{this.dataSource.data[0].currentProject}}</p>
+						<p><strong>Status:</strong> {{this.dataSource.data[0].status}}</p>
 					</div>
 				</div>
 			</div>
@@ -105,7 +105,7 @@
 						<div class="employee-info">
 							<p class="employee-designation" style="text-decoration: underline; cursor: pointer;">About FEFA</p>
 							<div class="employee-info" style="text-decoration: underline; cursor: pointer;">
-								<p>Help?</p>
+								<p>Help</p>
 								<p>Terms & Contidions</p>
 								<p>Contact</p>
 								<p>Complaint</p>
