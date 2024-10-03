@@ -11,14 +11,14 @@
     </div>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>logout</mat-icon>
+        <span>SN</span>
     </button>
 </mat-toolbar>
 
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
         <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-            <div class="d-flex flex-row justify-content-start align-items-center width-10 cursor-pointer">
+            <div mat-icon-button class="d-flex flex-row justify-content-start align-items-center width-10 cursor-pointer">
                 <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
                     <mat-icon>assignment</mat-icon>
                 </button>
@@ -30,7 +30,7 @@
                 </button>
                 <span>Task</span>
             </div>
-
         </div>
-    </mat-drawer>
-</mat-drawer-container>
+        </mat-drawer>
+        <app-home-view-detials></app-home-view-detials>
+    </mat-drawer-container>

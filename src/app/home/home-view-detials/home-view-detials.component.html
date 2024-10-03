@@ -1,0 +1,140 @@
+<div class="d-flex flex-row h-100 w-100">
+	<div class="d-flex flex-column container-half">
+		<div #profile class="home-container" style="background: var(--profile-background);">
+			<div class="d-flex justify-content-center flex-column align-items-center">
+				<img src=" assets/image/image.png" alt="">
+			</div>
+		</div>
+		<div class="home-container bg-danger">
+			<div class="employee-summary">
+				<div class="employee-details gap-3 justify-content-center p-2">
+					<h2 class="employee-name">Surya nayak</h2>
+					<p class="employee-designation">Sr.Software Engineer</p>
+					<div class="employee-info">
+						<p><strong>Email:</strong> suresh.nayak&#64;acheron-tech.com</p>
+						<p><strong>Employee number:</strong> 116</p>
+						<p><strong>Department:</strong> Development</p>
+						<p><strong>Age:</strong> 28</p>
+						<p><strong>Projects:</strong> ElefantPrint</p>
+						<p><strong>Status:</strong> Active</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="home-container bg-warning"></div>
+	</div>
+	<div #detials class="d-flex flex-column container-full home-container h-100">
+	</div>
+	<div #profileData class="d-flex flex-column container-half">
+		<div class="home-container bg-primary"></div>
+		<div class="home-container bg-danger"></div>
+		<div class="home-container bg-warning"></div>
+	</div>
+</div>
+<div #table class="d-flex flex-row h-100 w-100 gap-3 mt-2">
+	<div class="d-flex flex-column container-full home-container h-100">
+		<div class="d-flex flex-row justify-content-center align-items-center" style=" position: relative;">
+			<input class="search-table" matInput [(ngModel)]="searchQuery" (ngModelChange)="applyFilter()"
+				placeholder="Search by Name or Department" />
+		</div>
+
+		<table class="asset-table">
+			<thead class="table-header-tab">
+				<tr>
+					<th id="expand" rowspan="2"><span>Employee Id</span></th>
+					<th id="grp" rowspan="2">Department</th>
+					<th id="asetType" rowspan="2">Employee type</th>
+					<th id="trg" rowspan="2">Name</th>
+					<th id="asp" style="width: 3rem;" rowspan="2">Age</th>
+					<th id="flp2" colspan="2">Project Details</th>
+					<th id="cpy" rowspan="2">Comments</th>
+					<th id="status" rowspan="2">Status</th>
+					<th id="action" rowspan="2">Action</th>
+				</tr>
+				<tr>
+					<th id="reqFLP">Current Project</th>
+					<th id="dsg">
+						<div class="designer-cls">No. of Projects worked</div>
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr *ngFor="let employee of dataSource.data; let i = index">
+					<td><span>{{ employee.position }}</span></td>
+					<td><span>{{ employee.department }}</span></td>
+					<td><span>{{ employee.employeeType }}</span></td>
+					<td><span>{{ employee.name }}</span></td>
+					<td><span>{{ employee.age }}</span></td>
+					<td><span>{{ employee.currentProject }}</span></td>
+					<td><span>{{ employee.projectsWorked }}</span></td>
+					<td><span>{{ employee.comments }}</span></td>
+					<td><span>{{ employee.status }}</span></td>
+					<td><span>{{ employee.action }}</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div #footer class="d-flex flex-row w-100 gap-3 mt-2 footer">
+	<div class="d-flex flex-row container-full home-container h-100 justify-content-center">
+		<div class="footer-image">
+			<img src="assets/image/logo.png" alt="">
+		</div>
+		<div #facebook class="d-flex flex-column align-items-center gap-3">
+			<div #contact class="d-flex">
+				<div class=" employee-summary">
+					<div class="employee-details gap-3 justify-content-center p-2">
+						<h2 class="employee-name">Contact us</h2>
+						<p class="employee-designation">FEFA</p>
+						<div class="employee-info">
+							<p>FEFE&#64;acheron-tech.com</p>
+							<p> +91 123450224430</p>
+							<p> Image Garden Road, Silicon valley,
+								Madhapur, Hyderabad-500081.
+							</p>
+							<p>India.</p>
+						</div>
+					</div>
+				</div>
+				<div class="employee-summary">
+					<div class="employee-details gap-3 justify-content-center p-2">
+						<h2 class="employee-name">Useful Links</h2>
+						<div class="employee-info">
+							<p class="employee-designation" style="text-decoration: underline; cursor: pointer;">About FEFA</p>
+							<div class="employee-info" style="text-decoration: underline; cursor: pointer;">
+								<p>Help?</p>
+								<p>Terms & Contidions</p>
+								<p>Contact</p>
+								<p>Complaint</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="footer-some-content d-flex justify-content-between">
+					<a href="https://www.facebook.com/" rel="noreferrer" target="_blank">
+						<div class="footer-some-icon">
+							<img src="https://elefantprint.b-cdn.net/media/fd/1a/7f/1679319016/facebook.svg" alt="Facebook logo icon">
+							<p class="footer-some-text"> </p>
+						</div>
+					</a>
+					<a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
+						<div class="footer-some-icon">
+							<img src="https://elefantprint.b-cdn.net/media/ca/e7/a0/1679319024/linked.svg" alt="Linkedin logo icon">
+							<p class="footer-some-text"> </p>
+						</div>
+					</a>
+					<a href="https://www.youtube.com/" rel="noreferrer" target="_blank">
+						<div class="footer-some-icon footer-youtube-icon">
+							<img src="https://elefantprint.b-cdn.net/media/c3/66/ac/1679319148/youtube.svg" alt="Youtube logo icon">
+							<p class="footer-some-text"> </p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
